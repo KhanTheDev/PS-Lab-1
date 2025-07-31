@@ -45,20 +45,20 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
 
-  // Part 1.1
+ // Part 1.1
+const isDivByFive = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+console.log(`All numbers divisible by 5: ${isDivByFive}`);
 
-  const isDivByFive = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+// Part 1.2
+const firstVsLast = n1 > n4;
+console.log(`Is the first number greater than the last? ${firstVsLast}`);
 
-  // Part 1.2 
+// Part 1.3
+console.log(`The result of ((n1 - n2) * n3) & n4 is: ${((n1 - n2) * n3) & n4}`);
 
-  const firstVsLast = n1 > n4;
+// Part 1.4
+const all25OrUnder = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
+console.log(`Are all numbers 25 or under? ${all25OrUnder}`);
 
-  // Part 1.3 
-
-  console.log(((n1 - n2) * n3) & n4);
-
-  // Part 1.4
-
-  const all25OrUnder = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
 
   
