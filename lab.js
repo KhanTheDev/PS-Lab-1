@@ -58,4 +58,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   console.log(((n1 - n2) * n3) & n4);
 
   // Part 1.4
+
+  const all25OrUnder = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
+
   
