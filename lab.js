@@ -60,5 +60,39 @@ console.log(`The result of ((n1 - n2) * n3) & n4 is: ${((n1 - n2) * n3) & n4}`);
 const all25OrUnder = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
 console.log(`Are all numbers 25 or under? ${all25OrUnder}`);
 
-
+// Part 2
   
+// Trip 
+let totalDistance = 1500;
+let fuelBudget = 175;
+let fuelPrice = 3;
+
+// Speed options
+let speed1 = 55;
+let mpg1 = 30;
+
+let speed2 = 60;
+let mpg2 = 28;
+
+let speed3 = 75;
+let mpg3 = 23;
+
+// Function
+function showTripDetails(speed, mpg) {
+  let gallons = totalDistance / mpg;
+  let cost = gallons * fuelPrice;
+  let time = totalDistance / speed;
+  let withinBudget = cost <= fuelBudget;
+
+  console.log("Speed: " + speed + " mph");
+  console.log("Miles per gallon: " + mpg);
+  console.log("Gallons needed: " + gallons.toFixed(2));
+  console.log("Fuel cost: $" + cost.toFixed(2));
+  console.log("Time to finish trip: " + time.toFixed(2) + " hours");
+  console.log("Is it within budget? " + (withinBudget ? "Yes" : "No"));
+}
+
+// Print 
+showTripDetails(speed1, mpg1);
+showTripDetails(speed2, mpg2);
+showTripDetails(speed3, mpg3);
